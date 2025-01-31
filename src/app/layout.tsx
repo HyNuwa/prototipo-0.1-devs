@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import  localFont from "next/font/local";
 import "./globals.css";
-import DesktopNavbar from "@/components/DesktopNavbar";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const geistSans = Geist({
@@ -77,7 +77,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${workSans.variable} antialiased`}
       >
-        <DesktopNavbar/>
+        <Navbar/>
         {children}
         <Footer />
       </body>

@@ -39,7 +39,7 @@ export default async function Home({searchParams}: {
         <p className="sub-heading !max-w-3xl ">
           Prepara tus clases con los mejores apuntes, clases grabadas y ejercicios resueltos gratis!
         </p>
-        <SearchForm query={query}/>
+        <SearchForm />
       </section>
 
       <section className="section_container">

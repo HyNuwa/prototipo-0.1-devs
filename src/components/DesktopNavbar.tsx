@@ -1,13 +1,10 @@
-"use client"
+
 
 import * as React from "react"
 import Link from "next/link"
-import { BellIcon } from "lucide-react"
+//import { BellIcon } from "lucide-react" 
 
 import { Button } from "@/components/ui/button"
-import SearchForm from "./SearchForm"
-import { useSearchParams } from 'next/navigation'
-import SheetMenu from "./SheetMenu"
 //import {DialogTitle, } from "@/components/ui/dialog"
 //import { Separator } from "@/components/ui/separator"
 
@@ -26,26 +23,12 @@ const routes = [
   },
 ]
 
-export function DesktopNavbar() {
-
-  const searchParams = useSearchParams()
- 
-  const query = searchParams.get('search')
+function DesktopNavbar() {
 
   return (
-    <nav className="border-b shadow-sm">
-      <div className="flex items-center justify-between px-4 py-3 max-w-7xl mx-auto">
-        <Link href="/" className="font-bold text-xl">
-          Devs Project
-        </Link>
+    <div className="hidden md:flex flex-grow items-center space-x-4">
 
-        <SearchForm query={query ?? ""} mini/>
-
-        <Button variant="outline" className="ml-auto"asChild>
-                <Link href="/notifications">
-                    <BellIcon className="w-4 h-4"/>
-                </Link>
-        </Button>
+        
         <div className="hidden md:flex space-x-4">
           {routes.map((route) => (
             <Button key={route.href} variant="ghost" asChild>
@@ -60,9 +43,12 @@ export function DesktopNavbar() {
           </Button>
         </div>
 
-        <SheetMenu />
-      </div>
-    </nav>
+        {/*<Button variant="outline" className="ml-auto"asChild>
+                <Link href="/notifications">
+                    <BellIcon className="w-4 h-4"/>
+                </Link>
+        </Button>*/ }
+    </div>
   )
 }
 
