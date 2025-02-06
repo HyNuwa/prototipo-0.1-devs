@@ -2,7 +2,7 @@
 
 import React, {  } from 'react';
 import Form from 'next/form';
-import SearchFormReset from '@/components/SearchFormReset';
+import SearchFormReset from '@/components/searchForm/SearchFormReset';
 import { SearchIcon } from 'lucide-react';
 import { useSearchParams } from 'next/navigation'
 

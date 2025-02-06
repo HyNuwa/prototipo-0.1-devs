@@ -1,8 +1,8 @@
 "use client"
 import Link from "next/link";
-import DesktopNavbar from "@/components/DesktopNavbar";
-import MobileNavbar from "@/components/MobileNavbar";
-import SearchForm from "./SearchForm";
+import DesktopNavbar from "@/components/shared/DesktopNavbar";
+import MobileNavbar from "@/components/shared/MobileNavbar";
+import SearchForm from "../searchForm/SearchForm";
 import Image from "next/image";
 
 //import { useState } from "react";

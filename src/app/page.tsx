@@ -1,5 +1,5 @@
-import SearchForm from "@/components/SearchForm";
-import StartupCard from "@/components/StartupCard";
+import SearchForm from "@/components/searchForm/SearchForm";
+import StartupCard from "@/components/card/StartupCard";
 import Image from "next/image";
 
 export default async function Home({searchParams}: {

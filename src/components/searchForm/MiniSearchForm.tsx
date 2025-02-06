@@ -1,6 +1,6 @@
 import React from 'react';
 import Form from 'next/form';
-import SearchFormReset from '@/components/SearchFormReset';
+import SearchFormReset from '@/components/searchForm/SearchFormReset';
 import { SearchIcon } from 'lucide-react';
 
 function SearchForm({ query, mini } : { query: string; mini?:boolean }) {
